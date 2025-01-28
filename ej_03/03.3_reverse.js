@@ -18,7 +18,7 @@ console.log(revertString(input3))
 console.log('Mediante Arrays:')
 
 const revertArray = (string) => {
-    let new_array = string;
+    let new_array = [...string];
     new_array = new_array.split('')
     new_array.push(' ',string.length)
     new_array.reverse()

@@ -24,12 +24,11 @@ console.log('Mediante Arrays y Strings Nº1:')//Opción Nº2.
 
 const juntar_y_reparar_lista = (lista) => {
 
-    let lista_padre = lista
-    let f_string = lista_padre.join(',')
-    let lista_hijo = f_string.split(/(,)/) //<--- Error al uzar slash -> (/(/)/)
-    lista_hijo[lista_hijo.lastIndexOf(',')] = '.'
+    let f_string = lista.join(',')
+    let array = f_string.split(/(,)/) //<--- Error al uzar slash -> (/(/)/)
+    array[array.lastIndexOf(',')] = '.'
 
-    let s_string = lista_hijo.join('')
+    let s_string = array.join('')
     s_string = s_string.replaceAll(',', '/')
 
     return s_string
@@ -45,7 +44,7 @@ console.log('Mediante Arrays y Strings Nº2:')//Opción Nº3.
 const juntar_y_reparar_lista2 = (lista) => {
 
     //Opcion Nº3.
-    let lista_padre = lista
+    let lista_padre = [...lista]
 
     let lista_hijo = []
     let new_string = ''
