@@ -44,23 +44,46 @@ console.log('Mediante Arrays y Strings Nº2:')//Opción Nº3.
 const juntar_y_reparar_lista2 = (lista) => {
 
     //Opcion Nº3.
-    let lista_padre = [...lista]
+    
+    //let lista_padre = [...lista]
 
-    let lista_hijo = []
+    //let lista_hijo = []
+    let new_array = []
+
     let new_string = ''
 
-    for (let i = 0; i < lista_padre.length; i++) {
+    for (let i = 0; i < lista.length; i++) {
+
+        new_array.push(lista[i])
+        //lista_hijo = [...lista_hijo, lista_padre[i]]
+
+        if (i < lista.length - 2) {
+            new_array.push('/')
+            //lista_hijo = [...lista_hijo, '/']
+        } else if (i < lista.length - 1) {
+            new_array.push('.')
+            //lista_hijo = [...lista_hijo, '.']
+        }
+    }
+    
+    /*
+        for (let i = 0; i < lista_padre.length; i++) {
 
         lista_hijo.push(lista_padre[i])
+        //lista_hijo = [...lista_hijo, lista_padre[i]]
 
         if (i < lista_padre.length - 2) {
             lista_hijo.push('/')
+            //lista_hijo = [...lista_hijo, '/']
         } else if (i < lista_padre.length - 1) {
             lista_hijo.push('.')
+            //lista_hijo = [...lista_hijo, '.']
         }
     }
-    new_string = lista_hijo.join('')
+    */    
+    new_string = new_array.join('')
     return new_string
+    
 }
 
 console.log(juntar_y_reparar_lista2(lista_1))

@@ -13,7 +13,7 @@ const revertString = (string) => {
 console.log(revertString(input1))
 console.log(revertString(input2))
 console.log(revertString(input3))
-
+z
 //Arrays=============================================================================================+
 console.log('Mediante Arrays:')
 
@@ -21,6 +21,7 @@ const revertArray = (string) => {
     let new_array = [...string];
     new_array = new_array.split('')
     new_array.push(' ',string.length)
+    //new_array = [...new_array, (' '+string.length)]
     new_array.reverse()
     const new_string = new_array.join("")
     

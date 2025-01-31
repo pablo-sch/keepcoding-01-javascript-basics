@@ -12,5 +12,5 @@ const calcularPromedio = (numeros) => {
 const listaNumeros = [1, 2, 3, 4, 5]
 const promedioNumeros = calcularPromedio(listaNumeros)
 
-//listaNumeros [1,2,3,4,5]
-//listaNumeros [0,1,2,3,4]
+//listaNumeros [1,2,3,4,5]//numeros
+//listaNumeros [0,1,2,3,4]//index
