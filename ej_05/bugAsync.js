@@ -28,6 +28,27 @@ function obtenerUsuario(id) {
 
 obtenerUsuario(1)
 
-.then(usuario => {
-    console.log(usuario);
-})
+    .then(usuario => {
+        console.log(usuario);
+    })
+//---------------------------------------------------------------------------------------------------+
+
+const getUser = (id, callBack) => {
+    setTimeout(() => {
+        let usuario;
+        if (id === 1) {
+            usuario = { id: 1, nombre: 'John Doe' };
+        }
+        callBack(null, usuario);
+    }, 2000);
+};
+
+const id_User = 1
+
+getUser(id_User, (error, user) => {
+    if (error) {
+        console.log('Hay error con el Usuario');
+    } else {
+        console.log(user);
+    }
+});
