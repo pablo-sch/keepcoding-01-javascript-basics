@@ -10,139 +10,157 @@
  */
 // Example: { title: 'Song Title', artist: 'Song Artist', genre: 'Song Genre', duration: 180, favorite: false }
 
-//---------------------------------------------------------------------------------------------------+
+//-----------------------------------------------------------------------------------------------------------------------------------------------+
 /**
  * @typedef {Object} Playlist
  * @property {string} name - The name of the playlist.
  * @property {Song[]} songs - The list of songs in the playlist.
  */
 // Example: { name: 'Playlist Name', songs: [{ title: 'Song Title', artist: 'Song Artist', genre: 'Song Genre', duration: 180, favorite: false }] }
-//---------------------------------------------------------------------------------------------------+
+//-----------------------------------------------------------------------------------------------------------------------------------------------+
+
 const musicCatalog = () => {
-  //---------------------------------------------------------------------------------------------------+
+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
+
   /**
-   * Array of playlists in the catalog.
-   * @type {Playlist[]}
-   */
+  * Array of playlists in the catalog.
+  * @type {Playlist[]}
+  */
+
   let playlists = [];
-  //---------------------------------------------------------------------------------------------------+
-  /**
-   * Adds a new playlist to the catalog.
-   * @param {string} playlistName - The name of the new playlist.
-   */
+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
 
   const createPlaylist = (playlistName) => {
+
+    /**
+    * Adds a new playlist to the catalog.
+    * @param {string} playlistName - The name of the new playlist.
+    */
+
     playlists = [...playlists, { name: playlistName, songs: [] }];
   };
-  //---------------------------------------------------------------------------------------------------+
-  /**
-   * Gets all playlists in the catalog.
-   * @returns {Playlist[]} The list of all playlists.
-   */
+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
+
   const getAllPlaylists = () => {
+
+    /**
+    * Gets all playlists in the catalog.
+    * @returns {Playlist[]} The list of all playlists.
+    */
+
     return playlists
   };
-  //---------------------------------------------------------------------------------------------------+
-  /**
-   * Removes a playlist from the catalog.
-   * @param {string} playlistName - The name of the playlist to remove.
-   */
+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
+
   const removePlaylist = (playlistName) => {
+
+    /**
+    * Removes a playlist from the catalog.
+    * @param {string} playlistName - The name of the playlist to remove.
+    */
+
     playlists = playlists.filter(playlis => playlis.name !== playlistName);
   };
-  //---------------------------------------------------------------------------------------------------+
-  /**
-   * Adds a song to a specific playlist.
-   * @param {string} playlistName - The name of the playlist to add the song to.
-   * @param {{ title: string, artist: string, genre: string, duration: number }} song - The song to add to the playlist.
-   * @throws {Error} If the playlist is not found.
-   */
+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
+
   const addSongToPlaylist = (playlistName, song) => {
 
-    const playYlist = playlists.find(playlist => playlist.name === playlistName);
+    /**
+    * Adds a song to a specific playlist.
+    * @param {string} playlistName - The name of the playlist to add the song to.
+    * @param {{ title: string, artist: string, genre: string, duration: number }} song - The song to add to the playlist.
+    * @throws {Error} If the playlist is not found.
+    */
 
-    if (!playYlist) {
+    const playlist = playlists.find(({ name }) => name === playlistName);
+
+    if (!playlist) {
       throw new Error('Playlist not found');
     }
 
-    playYlist.songs = [...playYlist.songs, song];
-  };
-  //---------------------------------------------------------------------------------------------------+
-  /**
-   * Removes a song from a specific playlist.
-   * @param {string} playlistName - The name of the playlist to remove the song from.
-   * @param {string} title - The title of the song to remove.
-   * @throws {Error} If the playlist or song is not found.
-   */
+    const newSong = {
+      ...song,
+      favorite: false
+    };
+
+    playlist.songs = [...playlist.songs, newSong];
+
+    playlists = playlists.map(p => p.name === playlistName ? playlist : p);
+  }
+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
+
   const removeSongFromPlaylist = (playlistName, title) => {
 
-    const listaRepro = playlists.find(playlist => playlist.name === playlistName);
+    /**
+    * Removes a song from a specific playlist.
+    * @param {string} playlistName - The name of the playlist to remove the song from.
+    * @param {string} title - The title of the song to remove.
+    * @throws {Error} If the playlist or song is not found.
+    */
 
-    if (!listaRepro) {
+    let playlist = playlists.find(({ name }) => name === playlistName);
+
+    if (!playlist) {
       throw new Error('Playlist not found');
     }
-    const song = listaRepro.songs.find(song => song.title === title);
+
+    let song = playlist.songs.find(({ title: songTitle }) => songTitle === title);
 
     if (!song) {
       throw new Error('Song not found');
     }
 
-    listaRepro.songs = listaRepro.songs.filter(song => song.title !== title);
+    const updatedSongs = playlist.songs.filter(({ title: songTitle }) => songTitle !== title);
 
-    playlists = playlists.map(playlist => {
-      if (playlist.name === playlistName) {
-        return {
-          ...playlist, listaRepro
-        };
-      }
-      return playlist;
-    });
+    playlists = playlists.map(playlist => playlist.name === playlistName ? { ...playlist, songs: updatedSongs } : playlist);
   };
-  //---------------------------------------------------------------------------------------------------+
-  /**
-   * Marks a song as a favorite or removes the favorite status.
-   * @param {string} playlistName - The name of the playlist containing the song.
-   * @param {string} title - The title of the song to mark as a favorite.
-   */
+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
+
   const favoriteSong = (playlistName, title) => {
 
-    const listaRepro = playlists.find(playlist => playlist.name === playlistName);
-    const song = listaRepro.songs.find(song => song.title === title);
-
-    //const song2 = playlists.songs.find(song => song.title === title);
-
-
-    listaRepro.songs = listaRepro.songs.filter(song => song.title !== title);
-
-    
+    /**
+    * Marks a song as a favorite or removes the favorite status.
+    * @param {string} playlistName - The name of the playlist containing the song.
+    * @param {string} title - The title of the song to mark as a favorite.
+    */
 
     playlists = playlists.map(playlist => {
       if (playlist.name === playlistName) {
         return {
-          ...playlist, listaRepro
+          ...playlist, songs: playlist.songs.map(song => song.title === title ? { ...song, favorite: !song.favorite } : song)
         };
       }
       return playlist;
     });
-
-
   };
-  //---------------------------------------------------------------------------------------------------+
-  /**
-   * Sorts songs in a specific playlist by a given criterion (title, artist, or duration).
-   * @param {string} playlistName - The name of the playlist to sort songs in.
-   * @param {'title' | 'artist' | 'duration'} criterion - The criterion to sort by.
-   * @returns {Song[]} The list of sorted songs.
-   * @throws {Error} If the playlist is not found or the criterion is invalid.
-   */
+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
+
   const sortSongs = (playlistName, criterion) => {
 
+    /**
+    * Sorts songs in a specific playlist by a given criterion (title, artist, or duration).
+    * @param {string} playlistName - The name of the playlist to sort songs in.
+    * @param {'title' | 'artist' | 'duration'} criterion - The criterion to sort by.
+    * @returns {Song[]} The list of sorted songs.
+    * @throws {Error} If the playlist is not found or the criterion is invalid.
+    */
+
   };
-  //---------------------------------------------------------------------------------------------------+
+  //-----------------------------------------------------------------------------------------------------------------------------------------------+
   return { createPlaylist, addSongToPlaylist, removeSongFromPlaylist, sortSongs, getAllPlaylists, removePlaylist, favoriteSong };
-};
+}
 
 const miPlaylist = musicCatalog()
+
+miPlaylist.createPlaylist('Playlist Title 1')
 
 const miCancion1 =
 {
@@ -162,12 +180,36 @@ const miCancion2 =
   favorite: false
 }
 
-miPlaylist.createPlaylist('Playlist Title')
-miPlaylist.addSongToPlaylist('Playlist Title', miCancion1)
-miPlaylist.addSongToPlaylist('Playlist Title', miCancion2)
+miPlaylist.createPlaylist('Playlist Title 2')
 
-miPlaylist.removeSongFromPlaylist('Playlist Title', 'Song Title1')
-miPlaylist.favoriteSong('Playlist Title', miCancion2)
+const miCancion3 =
+{
+  title: 'Song Title3',
+  artist: 'Song Artist3',
+  genre: 'Song Genre3',
+  duration: 180,
+  favorite: true
+}
+
+const miCancion4 =
+{
+  title: 'Song Title4',
+  artist: 'Song Artist4',
+  genre: 'Song Genre4',
+  duration: 180,
+  favorite: true
+}
+
+
+miPlaylist.addSongToPlaylist('Playlist Title 1', miCancion1)
+miPlaylist.addSongToPlaylist('Playlist Title 1', miCancion2)
+
+miPlaylist.addSongToPlaylist('Playlist Title 2', miCancion3)
+miPlaylist.addSongToPlaylist('Playlist Title 2', miCancion4)
+
+miPlaylist.removeSongFromPlaylist('Playlist Title 2', 'Song Title4')
+
+miPlaylist.favoriteSong('Playlist Title 1', 'Song Title1')
 
 
 //console.log(miPlaylist.createPlaylist('GG'))
