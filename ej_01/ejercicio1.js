@@ -10,9 +10,14 @@ const estudiante = {
 };
 
 //const [clase, fecha] = estudiante.modulo[2]
+/*
 const moduloReact = estudiante.modulo[2].join(' ')
+console.log(moduloReact)
+*/
 
+console.log(estudiante.modulo[2].join(' '));
 
+/*
 const { modulo : [h] } = {
     nombre: 'Pablo',
     apellidos: 'Abaroa Schilling',
@@ -23,6 +28,8 @@ const { modulo : [h] } = {
     ],
     busqueda_activa: true,
 }
+*/
+
 /*
 const estudianteReact = () => {
     //const string = `<h2>${estudiante.modulo[2][0]} ${estudiante.modulo[2][1]}</h2>`;
@@ -36,7 +43,7 @@ const estudianteReact = () => {
     return string
 }
     console.log(estudianteReact())
-
 */
-console.log(moduloReact)
+
+
 

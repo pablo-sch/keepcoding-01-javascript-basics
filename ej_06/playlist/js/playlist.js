@@ -63,7 +63,7 @@ const musicCatalog = () => {
     * @param {string} playlistName - The name of the playlist to remove.
     */
 
-    playlists = playlists.filter(playlis => playlis.name !== playlistName);
+    playlists = playlists.filter(({ name }) => name !== playlistName);
   };
 
   //-----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -90,7 +90,7 @@ const musicCatalog = () => {
 
     playlist.songs = [...playlist.songs, newSong];
 
-    playlists = playlists.map(p => p.name === playlistName ? playlist : p);
+    playlists = playlists.map(pl => pl.name === playlistName ? playlist : pl);
   }
 
   //-----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -110,13 +110,13 @@ const musicCatalog = () => {
       throw new Error('Playlist not found');
     }
 
-    let song = playlist.songs.find(({ title: songTitle }) => songTitle === title);
+    let song = playlist.songs.find(({ title: tituloCancion }) => tituloCancion === title);
 
     if (!song) {
       throw new Error('Song not found');
     }
 
-    const updatedSongs = playlist.songs.filter(({ title: songTitle }) => songTitle !== title);
+    const updatedSongs = playlist.songs.filter(({ title: tituloCancion }) => tituloCancion !== title);
 
     playlists = playlists.map(playlist => playlist.name === playlistName ? { ...playlist, songs: updatedSongs } : playlist);
   };
