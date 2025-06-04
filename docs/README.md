@@ -61,7 +61,7 @@ Each exercise must be solved without relying on any external library or framewor
 
 ### Note
 
-- The exercise statements and the code shown have been created by the docent Kevin Martinez.
+- The exercise statements and the code shown have been created by the docent **Kevin Martinez**.
 
 ### General Considerations
 

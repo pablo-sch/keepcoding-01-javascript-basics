@@ -59,7 +59,7 @@ Jede Aufgabe muss ohne Abhängigkeit von externen Bibliotheken oder Frameworks g
 
 ### Hinweis
 
-- Die Aufgabenstellungen und der gezeigte Code wurden vom Dozenten Kevin Martínez erstellt.
+- Die Aufgabenstellungen und der gezeigte Code wurden vom Dozenten **Kevin Martínez** erstellt.
 
 ### Allgemeine Hinweise
 

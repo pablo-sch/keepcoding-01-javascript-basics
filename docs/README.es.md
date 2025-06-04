@@ -148,7 +148,7 @@ Cada ejercicio debe resolverse sin depender de ninguna librería o _framework_ e
 
 ### Nota
 
-- Los enunciados de los ejercicios y el codigo mostrado han sido creados por el docente Kevin Martínez.
+- Los enunciados de los ejercicios y el codigo mostrado han sido creados por el docente **Kevin Martínez**.
 
 ### Consideraciones generales
 
