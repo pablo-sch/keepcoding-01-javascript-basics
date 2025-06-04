@@ -288,11 +288,13 @@ Keine
 
 ### Repository klonen
 
-Projekt
+- **Projekt**
 
 ```bash
 git clone https://github.com/pablo-sch/keepcoding-01-javascript-basics.git
 ```
+
+- **Demo**
 
 ![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
