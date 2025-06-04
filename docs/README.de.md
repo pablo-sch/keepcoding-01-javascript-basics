@@ -1,4 +1,4 @@
-# Abgabe des Projekts „Einführung in JavaScript“
+# Abgabe des Projekts "Einführung in JavaScript"
 
 **KeepCoding-Projekte – Web 18**  
 Siehe die vollständige Liste der Repositories und Beschreibungen in [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
@@ -6,13 +6,15 @@ Siehe die vollständige Liste der Repositories und Beschreibungen in [repos-kc-w
 ## Wähle deine Sprache
 
 - 🇺🇸 [Englisch](README.md)
-- 🇩🇪 [Deutsch](README.de.md)
+- 🇪🇸 [Spanisch](README.es.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
 ## Ziel des Projekts
 
 Dieses Projekt hat das Ziel, die in den virtuellen Kursen erworbenen Kenntnisse zu vertiefen und anzuwenden, indem grundlegende JavaScript-Konzepte als Einführung in die Webprogrammierung genutzt werden. Es ist nicht erlaubt, externe JavaScript- oder CSS-Bibliotheken bzw. Frameworks zu verwenden; alles muss mit „Vanilla JS“ gelöst werden. Auf diese Weise spiegelt jede Aufgabe genau das wider, was im Unterricht besprochen wurde, und bietet eine praxisorientierte Einführung in die Webentwicklung.
+
+<!-- ------------------------------------------------------------------------------------------- -->
 
 ## Beschreibung
 
