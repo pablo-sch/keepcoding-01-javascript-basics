@@ -21,9 +21,9 @@ Este proyecto tiene por objetivo ejercitar y demostrar los conocimientos adquiri
 En este repositorio encontrarás la práctica correspondiente a la unidad **“Introducción a JavaScript”**. Contiene seis ejercicios que cubren:
 
 - **Strings**, **Arrays**, **Objetos** y sus atributos.
-- Manejo de **sincronía** y **destructuración**.
+- Manejo de **sincronía** y **desestructuración**.
 - Creación y utilización de **funciones**.
-- Métodos de array como **`.map`**, **`.find`** y **`.filter`**.
+- Métodos de arreglo como **`.map`**, **`.find`** y **`.filter`**.
 - Un pequeño conjunto de pruebas (testing) al final del ejercicio 06.
 
 Cada ejercicio debe resolverse sin depender de ninguna librería o _framework_ externo, para reforzar el entendimiento de la sintaxis y las técnicas propias de JavaScript.
@@ -32,7 +32,30 @@ Cada ejercicio debe resolverse sin depender de ninguna librería o _framework_ e
 
 ## Conocimientos Aprendidos y Trabajados
 
-- Introduccion a JS
+| **Categoría**                         | **Subtemas / Detalles**                                                                                                                                                                               |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Introducción a JavaScript             | –                                                                                                                                                                                                     |
+| Sintaxis y Variables                  | Escritura básica de un archivo; Palabras reservadas; Comentarios; Declaración de variables (`let`, `const`, `var`); Punto y coma                                                                      |
+| Tipos de Datos                        | Primitivos; Número (`42`, `3.14159`); Cadena (`"Howdy"`); Booleano (`true`, `false`); `null`; `undefined`; BigInt (`9007199254740992n`); Objeto; Valores distintos de cero, `0`, `null` y `undefined` |
+| Operadores                            | `typeof`; Operadores de asignación; Operadores aritméticos; Operadores de comparación; Operadores de cadena; Operadores lógicos; Operador coma                                                        |
+| Sentencias de Control y Bloques       | –                                                                                                                                                                                                     |
+| Expresiones Condicionales (`if…else`) | –                                                                                                                                                                                                     |
+| Bloques                               | –                                                                                                                                                                                                     |
+| Hoisting                              | –                                                                                                                                                                                                     |
+| `switch`                              | –                                                                                                                                                                                                     |
+| Operador Ternario                     | –                                                                                                                                                                                                     |
+| Valores “Truthy”                      | Números distintos de 0; Cadenas distintas de `""`; Objetos; Funciones                                                                                                                                 |
+| Valores “Falsy”                       | `false`; `0`; `""` o `''`; `null`; `undefined`; `NaN`                                                                                                                                                 |
+| Cadenas y Arreglos                    | Métodos de cadena: `trim()`, `toLowerCase()`, `includes()`, `replace()`, parsing; Manejo de errores; Métodos de arreglos; Arreglos bidimensionales                                                    |
+| Funciones                             | Declaración de función; Funciones flecha; Llamada a funciones; Ámbito (scope); Cierres (closures); Parámetros predeterminados; Parámetros `rest`                                                      |
+| Bucles                                | `for`; `while`; `break` y `continue`; `for…in`                                                                                                                                                        |
+| Objetos                               | Creación de objetos; Acceso a propiedades; Modificación de propiedades; Adición de propiedades; Eliminación de propiedades; Iteración con `for…in`                                                    |
+| Mutabilidad                           | Objetos y arreglos mutables; Operador spread (`...`); Desestructuración (destructuring); Problemas de referencia                                                                                      |
+| Programación Funcional                | Funciones callback; `forEach`; `map`; `filter`; `reduce`                                                                                                                                              |
+| Asincronía                            | Callbacks asíncronos; Promesas (`Promise`); `async` / `await`                                                                                                                                         |
+| Temas Adicionales                     | Fechas (`Date`); Expresiones regulares (RegEx); Módulos (ES Modules)                                                                                                                                  |
+
+<!-- - Introduccion a JS
 - Sintaxis y variables
   - Escritura básica de un archivo.
   - Palabras reservadas.
@@ -117,11 +140,15 @@ Cada ejercicio debe resolverse sin depender de ninguna librería o _framework_ e
 - Extra
   - Dates
   - Regex
-  - Modules
+  - Modules -->
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
 ## Detalles del Proyecto
+
+### Nota
+
+- Los enunciados de los ejercicios y el codigo mostrado han sido creados por el docente Kevin Martínez.
 
 ### Consideraciones generales
 
@@ -158,8 +185,6 @@ const calcularPromedio = (numeros) => {
 };
 const listaNumeros = [1, 2, 3, 4, 5];
 const promedioNumeros = calcularPromedio(listaNumeros);
-
-//Creado por el docente Kevin Martínez
 ```
 
 ### Ejercicio 3: Deducir la lógica
@@ -187,8 +212,6 @@ const promedioNumeros = calcularPromedio(listaNumeros);
   ];
   yourFunction(input3);
   // 'programming/languages/easy/beginner/useful/pythonstuff.py'
-
-  //Creado por el docente Kevin Martínez
   ```
 
   2. **Ejercicio 3.2**: Crear una función que, con los datos de entrada proporcionados, produzca los resultados esperados.
@@ -202,8 +225,6 @@ const promedioNumeros = calcularPromedio(listaNumeros);
   yourFunction(input); // '1'
   const thirdInput = 11234;
   yourFunction(input); // '1-1-2-3-4'
-
-  //Creado por el docente Kevin Martínez
   ```
 
   3. **Ejercicio 3.3**: Crear una función que, con los datos de entrada proporcionados, produzca los resultados esperados.
@@ -219,8 +240,6 @@ const promedioNumeros = calcularPromedio(listaNumeros);
   yourFunction(input); // '8 elbairav'
   const input3 = "pointer";
   yourFunction(input); // '7 retniop'
-
-  //Creado por el docente Kevin Martínez
   ```
 
 ### Ejercicio 4: Transformaciones con `map` y `filter`
@@ -263,8 +282,6 @@ const promedioNumeros = calcularPromedio(listaNumeros);
       ],
     },
   ];
-
-  //Creado por el docente Kevin Martínez
   ```
 
   ```javascript
@@ -285,7 +302,6 @@ const promedioNumeros = calcularPromedio(listaNumeros);
   /_ nombresProyectos _/
   ['Proyecto 1', 'Proyecto 2', 'Proyecto 3', 'Proyecto 4', 'Proyecto 5','Proyecto 6']
 
-    //Creado por el docente Kevin Martínez
   ```
 
 ### Ejercicio 5: Arreglar bug de asincronía
@@ -309,25 +325,23 @@ const promedioNumeros = calcularPromedio(listaNumeros);
   }
   const usuario = obtenerUsuario(1);
   console.log(usuario);
-
-  //Creado por el docente Kevin Martínez
   ```
 
 ### Ejercicio 6: Keepcoding Playlist
 
 - El cliente ya creó la maquetación y parte de la lógica de formularios e interacciones (ordenar, marcar como favorito, borrar), pero necesita ayuda para manejar el estado y la lógica completa de la web.
 - Se debe:
-- Crear un estado dentro de una función usando **closures**.
-- Exportar dicha función para gestionar las funcionalidades de la app.
+  - Crear un estado dentro de una función usando **closures**.
+  - Exportar dicha función para gestionar las funcionalidades de la app.
 - El archivo a modificar ya existe en `playlist/js/playlist.js`; solo es necesario editar ese archivo.
 - Cada playlist tiene:
-- Nombre de la playlist
-- Listado de canciones, donde cada canción incluye:
-- Título
-- Nombre del artista
-- Género musical
-- Duración en segundos
-- Indicador de “favorita” (booleano)
+  - Nombre de la playlist
+  - Listado de canciones, donde cada canción incluye:
+    - Título
+    - Nombre del artista
+    - Género musical
+    - Duración en segundos
+    - Indicador de “favorita” (booleano)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
