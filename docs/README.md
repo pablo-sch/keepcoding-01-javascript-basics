@@ -1,7 +1,7 @@
 # JavaScript Introduction Project Submission
 
 **KeepCoding Projects - Web 18**  
-See the full list of repositories and descriptions at [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
+See the full list of repositories and descriptions at 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
 
 ## Select Your Language
 
@@ -288,13 +288,13 @@ None
 
 ### Cloning the Repository
 
-- **Proyect**
+Proyect
 
 ```bash
 git clone https://github.com/pablo-sch/keepcoding-01-javascript-basics.git
 ```
 
-- **Demo**
+Demo
 
 ![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
