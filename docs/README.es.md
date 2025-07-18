@@ -335,8 +335,6 @@ const promedioNumeros = calcularPromedio(listaNumeros);
 
 ## Tecnologías Utilizadas
 
-### Lenguajes
-
 - **Lenguajes:** HTML , CSS, JavaScript.
 - **Dependencias a destacar (Node.js):** Ninguna.
 
@@ -363,9 +361,7 @@ git clone https://github.com/pablo-sch/keepcoding-01-javascript-basics.git
 
 ## Recursos del Proyecto
 
-### Vista Previa del Proyecto
-
-#### Ejercicio 6: Playlist
+### Ejercicio 6: Playlist
 
 ![Playlist](../etc/preview_images/playlist.png)
 

@@ -249,8 +249,6 @@ yourFunction(input); // '7 retniop'
 
 ## Verwendete Technologien
 
-### Sprachen
-
 - **Sprachen:** HTML, CSS, JavaScript.
 - **Bemerkenswerte Abhängigkeiten (Node.js):** Keine.
 
@@ -277,9 +275,7 @@ git clone https://github.com/pablo-sch/keepcoding-01-javascript-basics.git
 
 ## Projektressourcen
 
-### Projektvorschau
-
-#### Übung 6: Playlist
+### Übung 6: Playlist
 
 ![Playlist](../etc/preview_images/playlist.png)
 
