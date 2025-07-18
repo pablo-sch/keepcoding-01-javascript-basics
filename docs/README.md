@@ -1,12 +1,8 @@
 # JavaScript Introduction Project Submission
 
-**KeepCoding Projects - Web 18**  
-See the full list of repositories and descriptions at 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
+`>` **KeepCoding Projects - Web 18:** 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
 
-## Select Your Language
-
-- 🇪🇸 [Spanish](README.es.md)
-- 🇩🇪 [German](README.de.md)
+`>` **Select your Language:** [Spanish](README.es.md) 🔄 [German](README.de.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 

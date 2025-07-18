@@ -1,12 +1,8 @@
 # Abgabe des Projekts "Einführung in JavaScript"
 
-**KeepCoding-Projekte – Web 18**  
-Siehe die vollständige Liste der Repositories und Beschreibungen in 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
+`>` **KeepCoding Projekte - Web 18:** 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
 
-## Wähle deine Sprache
-
-- 🇺🇸 [Englisch](README.md)
-- 🇪🇸 [Spanisch](README.es.md)
+`>` **Wähle deine Sprache:** [Englisch](README.md) 🔄 [Spanish](README.es.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
