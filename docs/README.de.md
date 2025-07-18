@@ -105,7 +105,7 @@ const averageOfNumbers = calculateAverage(numberList);
 
 - Es gibt keine Aufgabenstellung: Du musst anhand der Eingabedaten und der erwarteten Ausgabe ableiten, was gefordert ist.
 
-1. **Aufgabe 3.1** – Erstelle eine Funktion, die mit den gegebenen Eingabedaten (hier nicht angezeigt) die erwarteten Ergebnisse liefert.
+**Aufgabe 3.1** – Erstelle eine Funktion, die mit den gegebenen Eingabedaten (hier nicht angezeigt) die erwarteten Ergebnisse liefert.
 
 ```javascript
 // exercise3.1.js
@@ -115,20 +115,12 @@ const input1 = ["Downloads", "Videos", "capture", "mp4"];
 yourFunction(input1); // 'Downloads/Videos/capture.mp4'
 const input2 = ["CodinGame", "python", "py"];
 yourFunction(input2); // 'CodinGame/python.py'
-const input3 = [
-  "programming",
-  "languages",
-  "easy",
-  "beginner",
-  "useful",
-  "pythonstuff",
-  "py",
-];
+const input3 = ["programming", "languages", "easy", "beginner", "useful", "pythonstuff", "py"];
 yourFunction(input3);
 // 'programming/languages/easy/beginner/useful/pythonstuff.py'
 ```
 
-2. **Aufgabe 3.2** – Erstelle eine Funktion, die mit den gegebenen Eingabedaten die erwarteten Ergebnisse liefert.
+**Aufgabe 3.2** – Erstelle eine Funktion, die mit den gegebenen Eingabedaten die erwarteten Ergebnisse liefert.
 
 ```javascript
 // exercise3.2.js
@@ -141,7 +133,7 @@ const thirdInput = 11234;
 yourFunction(input); // '1-1-2-3-4'
 ```
 
-3. **Aufgabe 3.3** – Erstelle eine Funktion, die mit den gegebenen Eingabedaten die erwarteten Ergebnisse liefert.
+**Aufgabe 3.3** – Erstelle eine Funktion, die mit den gegebenen Eingabedaten die erwarteten Ergebnisse liefert.
 
 ```javascript
 // exercise3.3.js
@@ -214,12 +206,7 @@ yourFunction(input); // '7 retniop'
     },
   ][
     // projectNames
-    ("Project 1",
-    "Project 2",
-    "Project 3",
-    "Project 4",
-    "Project 5",
-    "Project 6")
+    ("Project 1", "Project 2", "Project 3", "Project 4", "Project 5", "Project 6")
   ];
   ```
 
@@ -268,46 +255,40 @@ yourFunction(input); // '7 retniop'
 
 ### Sprachen
 
-- **HTML**: Zur Strukturierung des Inhalts und Erstellung des Seitenaufbaus.
-- **CSS**: Für Design und visuelle Gestaltung, um ein attraktives und konsistentes Benutzer­erlebnis zu gewährleisten.
-- **JavaScript**: Zur Ergänzung der Website um Interaktivität und dynamische Funktionen, wodurch die Benutzer­erfahrung durch Formular­validierung, Animationen und Event-Handling verbessert wird.
-
-### Abhängigkeiten
-
-Keine
+- **Sprachen:** HTML, CSS, JavaScript.
+- **Bemerkenswerte Abhängigkeiten (Node.js):** Keine.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Installations und Nutzungshinweise
+## Installations- und Nutzungshinweise
 
-### Softwareanforderungen
+### 1. Softwareanforderungen
 
-- **Git** (getestet mit Version 2.47.1.windows.1)
-- **Visual Studio Code** (getestet mit Version 1.99.0)
-- **Live Server** (VS Code-Erweiterung)
+- **[Node.js](https://nodejs.org/en/download/)** (getestet mit Version **v22.15.1**)
+- **[Git](https://git-scm.com/downloads)** (getestet mit Version **2.47.1.windows.1**)
+- **[Visual Studio Code](https://code.visualstudio.com/)** (getestet mit Version **1.99.0**)
+- **Live Server** (VS Code-Addon)
 
-### Repository klonen
-
-Projekt
+### 2. Repository-Klonen
 
 ```bash
 git clone https://github.com/pablo-sch/keepcoding-01-javascript-basics.git
 ```
 
-Demo
-
-![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
+`>` **Klon-Demo in VSCode ansehen:** 🎥 [Gif Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Projektübersicht
+## Projektressourcen
 
-### Aufgabe 6: Playlist
+### Projektvorschau
+
+#### Übung 6: Playlist
 
 ![Playlist](../etc/preview_images/playlist.png)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Beiträge und Lizenzen
+## Beiträge und Lizenzierung
 
-Dieses Projekt hat keine externen Beiträge oder Lizenzen.
+Projekt unter MIT-Lizenz. Frei zur Nutzung und Verbreitung mit Namensnennung. Externe Beiträge werden nicht angenommen, aber Vorschläge sind willkommen.

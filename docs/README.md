@@ -105,7 +105,7 @@ const averageOfNumbers = calculateAverage(numberList);
 
 - There is no problem statement; you must deduce what is expected by examining the input data and the resulting output.
 
-1. **Exercise 3.1**: Create a function that, given the provided input data (not shown here), produces the expected results.
+**Exercise 3.1**: Create a function that, given the provided input data (not shown here), produces the expected results.
 
 ```javascript
 // exercise3.1.js
@@ -115,20 +115,12 @@ const input1 = ["Downloads", "Videos", "capture", "mp4"];
 yourFunction(input1); // 'Downloads/Videos/capture.mp4'
 const input2 = ["CodinGame", "python", "py"];
 yourFunction(input2); // 'CodinGame/python.py'
-const input3 = [
-  "programming",
-  "languages",
-  "easy",
-  "beginner",
-  "useful",
-  "pythonstuff",
-  "py",
-];
+const input3 = ["programming", "languages", "easy", "beginner", "useful", "pythonstuff", "py"];
 yourFunction(input3);
 // 'programming/languages/easy/beginner/useful/pythonstuff.py'
 ```
 
-2. **Exercise 3.2**: Create a function that, given the provided input data, produces the expected results.
+**Exercise 3.2**: Create a function that, given the provided input data, produces the expected results.
 
 ```javascript
 // exercise3.2.js
@@ -141,7 +133,7 @@ const thirdInput = 11234;
 yourFunction(input); // '1-1-2-3-4'
 ```
 
-3. **Exercise 3.3**: Create a function that, given the provided input data, produces the expected results.
+**Exercise 3.3**: Create a function that, given the provided input data, produces the expected results.
 
 ```javascript
 // exercise3.3.js
@@ -214,12 +206,7 @@ yourFunction(input); // '7 retniop'
     },
   ][
     // projectNames
-    ("Project 1",
-    "Project 2",
-    "Project 3",
-    "Project 4",
-    "Project 5",
-    "Project 6")
+    ("Project 1", "Project 2", "Project 3", "Project 4", "Project 5", "Project 6")
   ];
   ```
 
@@ -268,46 +255,40 @@ yourFunction(input); // '7 retniop'
 
 ### Languages
 
-- **HTML**: For structuring content and building the page layout.
-- **CSS**: For design and visual styling, ensuring an attractive and consistent user experience.
-- **JavaScript**: For adding interactivity and dynamic features to the website, enhancing user experience with form validation, animations, and event handling.
-
-### Dependencies
-
-None
+- **Languages:** HTML, CSS, JavaScript.
+- **Notable Dependencies (Node.js):** None.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
 ## Installation and Usage Instructions
 
-### Software Requirements
+### 1. Software Requirements
 
-- **[Git](https://git-scm.com/downloads)** (tested with version **2.47.1.windows.1**)
-- **[Visual Studio Code](https://code.visualstudio.com/)** (tested with version **1.99.0**)
+- **[Node.js](https://nodejs.org/en/download/)** (tested on version **v22.15.1**)
+- **[Git](https://git-scm.com/downloads)** (tested on version **2.47.1.windows.1**)
+- **[Visual Studio Code](https://code.visualstudio.com/)** (tested on version **1.99.0**)
 - **Live Server** (VS Code addon)
 
-### Cloning the Repository
-
-Proyect
+### 2. Repository Cloning
 
 ```bash
 git clone https://github.com/pablo-sch/keepcoding-01-javascript-basics.git
 ```
 
-Demo
-
-![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
+`>` **View Cloning Demo in VSCode:** 🎥 [Gif Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Project Preview
+## Project Resources
 
-### Exercise 6: Playlist
+### Project Preview
+
+#### Exercise 6: Playlist
 
 ![Playlist](../etc/preview_images/playlist.png)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Contribuciones y Licencias
+## Contributions and Licensing
 
-Este proyecto no cuenta con contribuciones externas ni licencias.
+Project licensed under the MIT License. Free to use and distribute with attribution. External contributions are not accepted, but suggestions are welcome.

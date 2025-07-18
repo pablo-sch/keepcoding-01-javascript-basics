@@ -1,12 +1,8 @@
 # Entrega Proyecto de Introducción a JavaScript
 
-**Proyectos KeepCoding - Web 18**  
-Consulta la lista completa de repositorios y descripciones en 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
+`>` **Proyectos KeepCoding - Web 18:** 📁 [repos-kc-web-18.md](https://github.com/pablo-sch/pablo-sch/blob/main/docs/repos-kc-web-18.md)
 
-## Selecciona tu Idioma
-
-- 🇺🇸 [Inglés](README.md)
-- 🇩🇪 [Alemán](README.de.md)
+`>` **Selecciona tu Idioma:** [Inglés](README.md) 🔄 [Alemán](README.de.md)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
@@ -191,7 +187,7 @@ const promedioNumeros = calcularPromedio(listaNumeros);
 
 - No hay enunciado: hay que deducir qué se espera según los datos de entrada y los resultados.
 
-  1. **Ejercicio 3.1**: Crear una función que, con los datos de entrada proporcionados (no mostrados aquí), produzca los resultados esperados.
+  **Ejercicio 3.1 :** Crear una función que, con los datos de entrada proporcionados (no mostrados aquí), produzca los resultados esperados.
 
   ```javascript
   // exercise3.1.js
@@ -201,20 +197,12 @@ const promedioNumeros = calcularPromedio(listaNumeros);
   yourFunction(input1); // 'Downloads/Videos/capture.mp4'
   const input2 = ["CodinGame", "python", "py"];
   yourFunction(input2); // 'CodinGame/python.py'
-  const input3 = [
-    "programming",
-    "languages",
-    "easy",
-    "beginner",
-    "useful",
-    "pythonstuff",
-    "py",
-  ];
+  const input3 = ["programming", "languages", "easy", "beginner", "useful", "pythonstuff", "py"];
   yourFunction(input3);
   // 'programming/languages/easy/beginner/useful/pythonstuff.py'
   ```
 
-  2. **Ejercicio 3.2**: Crear una función que, con los datos de entrada proporcionados, produzca los resultados esperados.
+  **Ejercicio 3.2 :** Crear una función que, con los datos de entrada proporcionados, produzca los resultados esperados.
 
   ```javascript
   // exercise3.2.js
@@ -227,7 +215,7 @@ const promedioNumeros = calcularPromedio(listaNumeros);
   yourFunction(input); // '1-1-2-3-4'
   ```
 
-  3. **Ejercicio 3.3**: Crear una función que, con los datos de entrada proporcionados, produzca los resultados esperados.
+  **Ejercicio 3.3 :** Crear una función que, con los datos de entrada proporcionados, produzca los resultados esperados.
 
   ```javascript
   // exercise3.3.js
@@ -349,41 +337,35 @@ const promedioNumeros = calcularPromedio(listaNumeros);
 
 ### Lenguajes
 
-- **HTML**: Para la estructuración del contenido y la creación de la estructura de la página web.
-- **CSS**: Para el diseño y estilo visual de la página, asegurando una experiencia de usuario atractiva y coherente.
-- **JavaScript**: Para agregar interactividad y características dinámicas al sitio web, mejorando la experiencia del usuario con funcionalidades como validación de formularios, animaciones y manejo de eventos.
-
-### Dependencias
-
-Ninguna
+- **Lenguajes:** HTML , CSS, JavaScript.
+- **Dependencias a destacar (Node.js):** Ninguna.
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
 ## Instrucciones de Instalación y Uso
 
-### Requisitos de Software
+### 1. Requisitos de Software
 
+- **[Node.js](https://nodejs.org/en/download/)** (testeado en la versión **v22.15.1**)
 - **[Git](https://git-scm.com/downloads)** (testeado en la versión **2.47.1.windows.1**)
 - **[Visual Studio Code](https://code.visualstudio.com/)** (testeado en la versión **1.99.0**)
 - **Live Server** (VS Code addon)
 
-### Clonación del Repositorio
-
-Poyecto
+### 2. Clonación del Repositorio
 
 ```bash
 git clone https://github.com/pablo-sch/keepcoding-01-javascript-basics.git
 ```
 
-Demo
-
-![Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
+`>` **Ver Demo de Clonanción en VSCode:** 🎥 [Gif Demo](https://github.com/pablo-sch/pablo-sch/blob/main/etc/clone-tutorial.gif)
 
 <!-- ------------------------------------------------------------------------------------------- -->
 
-## Vista Previa del Proyecto
+## Recursos del Proyecto
 
-### Ejercicio 6: Playlist
+### Vista Previa del Proyecto
+
+#### Ejercicio 6: Playlist
 
 ![Playlist](../etc/preview_images/playlist.png)
 
@@ -391,4 +373,4 @@ Demo
 
 ## Contribuciones y Licencias
 
-Este proyecto no cuenta con contribuciones externas ni licencias.
+Proyecto bajo licencia MIT. Uso y distribución libres con atribución. No se aceptan contribuciones externas, pero las sugerencias son bienvenidas.
